@@ -8,7 +8,7 @@ import headerPhoto from "./img/kyle_photo.jpg"
 export default class Home extends Component {
   render() {
       return (
-        <div className="container-fluid pt-2 px-lg-5 bg-bracket">
+        <div className="container-fluid pt-2 px-lg-0 bg-bracket">
 
           <nav className="nav row mt-5 ml-sm-2">
             <div className="col-3 align-self-center">
@@ -38,7 +38,7 @@ export default class Home extends Component {
           </nav>
 
           {/* Heading */}
-          <div className="container mt-5 pl-lg-0 ml-sm-1 ml-lg-4">
+          <div className="container mt-5 px-0 ml-sm-1 ml-lg-4">
             <h1 className="heading">Hi, I'm Kyle Zunino.<br />
               Student, Traveler, and <br />
               Full Stack JavaScript <span className="secondary-color">Developer</span>
@@ -46,7 +46,7 @@ export default class Home extends Component {
           </div> {/* /Heading */}
 
           {/* Jumbotron */}
-          <div className="container-fluid mt-5 px-lg-5">
+          <div className="container-fluid mt-5 px-0">
             <img src={headerPhoto} alt="kyle" className="kyle" />
             <p className="col-md-9 pt-4 pl-0 text-secondary">I am a world-traveling hospitality veteran turned
                 Full Stack JavaScript Web Developer located in the San
@@ -58,7 +58,7 @@ export default class Home extends Component {
           </div>
 
         {/* Skills */}
-        <section className="container-fluid mt-5 px-lg-5">
+        <section className="container-fluid mt-5 px-0">
           <h2 className="font-weight-bold mb-3">Skills</h2>
           <ul className="row pl-3">
             <li className="col-6 col-md-2">JavaScript</li>
@@ -77,7 +77,7 @@ export default class Home extends Component {
         </section>
 
         {/* Projects */}
-            <section className="container-fluid mt-5 px-lg-5">
+            <section className="container-fluid mt-5 px-0">
             <h2 className="font-weight-bold">Projects</h2>
             <div className="row justify-content-around">
               <div className="col-lg-6 mt-5">
