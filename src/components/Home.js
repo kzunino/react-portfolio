@@ -84,25 +84,25 @@ export default class Home extends Component {
                 <img className="project-img" src={Project} alt="" />
                 <h3 className="font-weight-bold mt-3">Project Name</h3>
                 <p className="project-description col-md-9 pl-0 text-secondary">A project description...</p>
-                <a className="link-decoration" href="/">View Project »</a>
+                <a className="link-decoration" href="/project">View Project »</a>
               </div>
               <div className="col-lg-6 mt-5">
                 <img className="project-img" src={Project} alt="" />
                 <h3 className="font-weight-bold mt-3">Project Name</h3>
                 <p className="project-description col-md-9 pl-0 text-secondary">A project description...</p>
-                <a className="link-decoration" href="/">View Project »</a>
+                <a className="link-decoration" href="/project">View Project »</a>
               </div>
               <div className="col-lg-6 mt-5">
                 <img className="project-img" src={Project} alt="" />
                 <h3 className="font-weight-bold mt-3">Project Name</h3>
                 <p className="project-description col-md-9 pl-0 text-secondary">A project description...</p>
-                <a className="link-decoration" href="/">View Project »</a>
+                <a className="link-decoration" href="/project">View Project »</a>
               </div>
               <div className="col-lg-6 mt-5">
                 <img className="project-img" src={Project} alt="" />
                 <h3 className="font-weight-bold mt-3">Project Name</h3>
                 <p className="project-description col-md-9 pl-0 text-secondary">A project description...</p>
-                <a className="link-decoration" href="/">View Project »</a>
+                <a className="link-decoration" href="/project">View Project »</a>
               </div>
             </div>
           </section>
