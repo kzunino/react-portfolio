@@ -58,7 +58,7 @@ p {
 }
 
 .heading {
-  font-size: 5.5vw;
+  font-size: 5vw;
   font-weight: 900;
   white-space: nowrap;
 }
@@ -113,7 +113,23 @@ p {
   font-size: 12px;
 }
 
-.project-link-color {
+.project-main-photo {
+  width: 100%;
+}
+.program-icon {
+  font-size: 35px;
+  font-weight: lighter;
+  padding: 5px;
+}
+.program-icon-img {
+  width: 55px;
+}
+
+.react {
+  color: #61dbfb;
+}
+.heroku {
+  color: #6762a6;
 }
 
 /* xs < 768 */
@@ -133,4 +149,7 @@ p {
 
 /* lg */
 @media screen and (min-width: 1200px) {
+  .heading {
+    font-size: 65px;
+  }
 }
