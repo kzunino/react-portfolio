@@ -118,8 +118,9 @@ p {
 }
 .program-icon {
   font-size: 35px;
+  padding: 15px;
   font-weight: lighter;
-  padding: 5px;
+  box-shadow: 0px 3px 4px 0px lightgrey;
 }
 .program-icon-img {
   width: 55px;
@@ -130,6 +131,7 @@ p {
 }
 .heroku {
   color: #6762a6;
+  padding-bottom: 10px;
 }
 
 /* xs < 768 */
