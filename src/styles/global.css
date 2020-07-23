@@ -15,7 +15,7 @@ a:hover {
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: circle;
   list-style-position: inside;
 }
 
@@ -103,7 +103,8 @@ p {
 
 .project-img {
   transition: transform 0.5s;
-  width: 90%;
+  width: 100%;
+  object-fit: cover;
 }
 .project-img:hover {
   transform: scale(1.02);
@@ -115,6 +116,7 @@ p {
 
 .project-main-photo {
   width: 100%;
+  height: auto;
 }
 .program-icon {
   font-size: 35px;
@@ -146,6 +148,9 @@ p {
 @media screen and (min-width: 992px) {
   .bg-bracket {
     background-position: 30px 30px;
+  }
+  .project-img {
+    height: 270px;
   }
 }
 

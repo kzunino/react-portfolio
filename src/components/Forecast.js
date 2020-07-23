@@ -73,6 +73,7 @@ export default class Project extends Component {
           alt='forecast weather app'
           className='project-main-photo'
         />
+
         <section className='container-fluid mt-5 px-0'>
           <h2 className='mt-5'>Web Stack</h2>
           <div className='row container-fluid pr-0 mr-sm-0 align-items-center'>
@@ -85,7 +86,7 @@ export default class Project extends Component {
               <br></br> <br></br>I chose Heroku because they have a generous
               free tier package and I wanted to practice uploading projects to a
               cloud-based web service that could host full stack web
-              applications. This came in handy for a later project full stack
+              applications. This came in handy for a later full stack
               application that utilized a database, server, and client.
             </p>
             <div className='col-md-5 pl-0 text-center'>
@@ -135,8 +136,8 @@ export default class Project extends Component {
               Another improvement would be to make it more responsive. As it is
               now, the application is nowhere near ready for viewing on a mobile
               device. I didn't really take this into account when I started
-              because I wanted to make a widget-like application, but I think it
-              could be made into a smaller, clean mobile version as well.
+              because I wanted to make a widget-like application, but it could
+              be made into a smaller, clean mobile version as well.
             </p>
           </div>
         </section>

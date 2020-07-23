@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import Project from './img/kyle_photo.jpg';
 import headerPhoto from './img/kyle_photo.jpg';
 import weatherForecast from './img/weatherForcast.png';
+import localsPhoto from './img/locals.png';
 
 export default class Home extends Component {
   render() {
@@ -88,6 +89,19 @@ export default class Home extends Component {
           <h2 className='font-weight-bold'>Projects</h2>
           <div className='row justify-content-around'>
             <div className='col-lg-6 mt-5'>
+              <Link to='/project'>
+                <img className='project-img' src={localsPhoto} alt='' />
+              </Link>
+              <h3 className='font-weight-bold mt-3'>Locals</h3>
+              <p className='project-description col-md-9 pl-0 text-secondary'>
+                A full stack application that connects travelers to locals
+                crafting authentic experiences in cities they love.
+              </p>
+              <a className='link-decoration' href='/project'>
+                View Project »
+              </a>
+            </div>
+            <div className='col-lg-6 mt-5'>
               <Link to='/forecast'>
                 <img className='project-img' src={weatherForecast} alt='' />
               </Link>
@@ -99,16 +113,6 @@ export default class Home extends Component {
               <Link className='link-decoration' href='/forecast'>
                 View Project »
               </Link>
-            </div>
-            <div className='col-lg-6 mt-5'>
-              <img className='project-img' src={Project} alt='' />
-              <h3 className='font-weight-bold mt-3'>Project Name</h3>
-              <p className='project-description col-md-9 pl-0 text-secondary'>
-                A project description...
-              </p>
-              <a className='link-decoration' href='/project'>
-                View Project »
-              </a>
             </div>
             <div className='col-lg-6 mt-5'>
               <img className='project-img' src={Project} alt='' />
