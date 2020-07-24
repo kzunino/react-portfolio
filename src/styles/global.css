@@ -19,6 +19,14 @@ ul {
   list-style-position: inside;
 }
 
+ul > li {
+  color: #2867b2; /* Change the color */
+}
+
+li > span {
+  color: black;
+}
+
 p {
   line-height: 2rem;
 }
@@ -131,6 +139,10 @@ p {
 /* Locals Styles */
 .locals-heading {
   color: rgb(191, 36, 152);
+}
+
+.locals-iphone {
+  width: 300px;
 }
 
 /* Web Stack Styles */

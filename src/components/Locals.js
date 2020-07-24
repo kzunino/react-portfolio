@@ -1,11 +1,11 @@
 import React from 'react';
 import localsLrg from './img/locals-lrg.png';
-import weatherForecast2 from './img/fullWeather2.png';
 import reactLogo from './img/react-icon.png';
 import herokuLogo from './img/heroku-icon.png';
 import nodeLogo from './img/node-logo.png';
 import javascriptLogo from './img/javascript-logo.png';
 import postgresLogo from './img/postgres-logo.png';
+import iphoneLocals from './img/iphone-locals.png';
 
 const Locals = () => {
   return (
@@ -180,12 +180,13 @@ const Locals = () => {
           <p className='col-md-9 text-center text-secondary'>
             This was the first full stack project that I created from scratch,
             so my biggest challenge was trying to figure out what my idea really
-            was and what features I should include. For example, I wanted there
-            to be a message board where users could interact; however, it wasn't
-            my intent to make this another social media site, so I could have
-            left out the regular users' profile pages or made them very simple
-            account pages and just let verified hosts create more complex
-            profile pages.
+            was and what features made sense to include. For example, I wanted
+            there to be a message board where users could interact in addition
+            to locals creating experiences. The message board might become a
+            place where local businesses could promote events and people could
+            interact and share fun things to do around a city. The message board
+            needs further development to allow users to search localized message
+            boards to the areas they wish to explore.
             <br></br>
             <br></br>
             Because this was a personal project, I didn't make any way for a
@@ -198,17 +199,25 @@ const Locals = () => {
             because it will be looking for exact matches.
             <br></br>
             <br></br>
-            Overall the project turned out really nice and I was able to learn
-            and practice a lot of new technologies. I decided to not add any
-            more features because I needed to continue my learning journey.
+            Overall this project taught me a lot and I was able to learn and
+            practice many new technologies. The sheer amount of possible
+            features to add to a project like this are enormous, and there is a
+            lot of room for improvement and development. If I were to pursue
+            this project more, my main concern would be strengthening the safety
+            aspect with verifying and vetting hosts. You'd need a way to make
+            sure the experiences and hosts were high quality in order to ensure
+            the safety of the users.
           </p>
         </div>
       </section>
-      <img
-        src={weatherForecast2}
-        alt='forecast weather app'
-        className='project-main-photo'
-      />
+      <div className='text-center'>
+        <img
+          src={iphoneLocals}
+          alt='locals profile on iphone'
+          className='locals-iphone'
+        />
+      </div>
+
       <div className='row justify-content-center'>
         <div className='col-12 col-md-2 text-center'>
           <a

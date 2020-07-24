@@ -69,18 +69,42 @@ const Home = () => {
       <section className='container-fluid mt-5 px-0'>
         <h2 className='font-weight-bold mb-3'>Skills</h2>
         <ul className='row pl-3'>
-          <li className='col-6 col-md-3'>JavaScript</li>
-          <li className='col-6 col-md-3'>Node.js</li>
-          <li className='col-6 col-md-3'>React</li>
-          <li className='col-6 col-md-3'>Express</li>
-          <li className='col-6 col-md-3'>Sequelize</li>
-          <li className='col-6 col-md-3'>SQLite</li>
-          <li className='col-6 col-md-3'>PostreSQL</li>
-          <li className='col-6 col-md-3'>Pug</li>
-          <li className='col-6 col-md-3'>HTML5</li>
-          <li className='col-6 col-md-3'>CSS3</li>
-          <li className='col-6 col-md-3'>Bootstrap4</li>
-          <li className='col-6 col-md-3'>Git</li>
+          <li className='col-6 col-md-3'>
+            <span>JavaScript</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>Node.js</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>React</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>Express</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>Sequelize</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>SQLite</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>PostgreSQL</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>Pug</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>HTML5</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>CSS3</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>Bootstrap4</span>
+          </li>
+          <li className='col-6 col-md-3'>
+            <span>Git</span>
+          </li>
         </ul>
       </section>
       {/* Projects */}
@@ -96,9 +120,9 @@ const Home = () => {
               A full stack application that connects travelers to locals
               crafting authentic experiences in cities they love.
             </p>
-            <a className='link-decoration' href='/locals'>
+            <Link className='link-decoration' to='/locals'>
               View Project »
-            </a>
+            </Link>
           </div>
           <div className='col-lg-6 mt-5'>
             <Link to='/forecast'>
@@ -109,7 +133,7 @@ const Home = () => {
               A five day forecast app that shows a US city forecast based on a
               user's zip code.
             </p>
-            <Link className='link-decoration' href='/forecast'>
+            <Link className='link-decoration' to='/forecast'>
               View Project »
             </Link>
           </div>
