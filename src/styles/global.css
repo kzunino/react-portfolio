@@ -128,12 +128,26 @@ p {
   width: 55px;
 }
 
+/* Locals Styles */
+.locals-heading {
+  color: rgb(191, 36, 152);
+}
+
+/* Web Stack Styles */
 .react {
   color: #61dbfb;
 }
 .heroku {
-  color: #6762a6;
+  color: rgb(153, 127, 189);
   padding-bottom: 10px;
+}
+.postgres {
+  color: rgb(57, 97, 143);
+  font-size: 34px;
+}
+
+.node {
+  color: rgb(141, 185, 57);
 }
 
 /* xs < 768 */

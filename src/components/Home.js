@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 import Project from './img/kyle_photo.jpg';
@@ -6,137 +6,137 @@ import headerPhoto from './img/kyle_photo.jpg';
 import weatherForecast from './img/weatherForcast.png';
 import localsPhoto from './img/locals.png';
 
-export default class Home extends Component {
-  render() {
-    return (
-      <div className='container-fluid pt-2 px-lg-0 bg-bracket'>
-        <nav className='nav row mt-5 ml-sm-2'>
-          <div className='col-3 align-self-center'>
-            <div className='vertical_line'></div>
-          </div>
-          <div className='col pl-0 icons'>
-            <a
-              className='icon github m-1 mr-4'
-              href='https://github.com/kzunino'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <i className='fab fa-github fa-lg' />
-            </a>
-            <a
-              className='icon linkedin m-1 mr-4'
-              href='https://www.linkedin.com/in/kylezunino/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <i className='fab fa-linkedin fa-lg' />
-            </a>
-            <a
-              className='icon instagram m-1'
-              href='https://www.instagram.com/kzunino'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <i className='fab fa-instagram fa-lg' />
-            </a>
-          </div>
-        </nav>
-        {/* Heading */}
-        <div className='container mt-5 px-0 ml-sm-1 ml-lg-4'>
-          <h1 className='heading'>
-            Hi, I'm Kyle Zunino.
-            <br />
-            Student, Traveler, and <br />
-            Full Stack JavaScript{' '}
-            <span className='secondary-color'>Developer</span>
-          </h1>
-        </div>{' '}
-        {/* /Heading */}
-        {/* Jumbotron */}
-        <div className='container-fluid mt-5 px-0'>
-          <img src={headerPhoto} alt='kyle' className='kyle' />
-          <p className='col-md-9 pt-4 pl-0 text-secondary'>
-            I am a world-traveling hospitality veteran turned Full Stack
-            JavaScript Web Developer located in the San Francisco Bay Area. I
-            graduated from UC-Berkeley in 2014 and currently a Student-Developer
-            Moderator at Team Treehouse.
-            <br />
-            <br />
-            When I'm not coding, you can find me hiking, traveling to far away
-            lands, vainly attempting to dance salsa, or training in the gym.
-          </p>
+const Home = () => {
+  return (
+    <div className='container-fluid pt-2 px-lg-0 bg-bracket'>
+      <nav className='nav row mt-5 ml-sm-2'>
+        <div className='col-3 align-self-center'>
+          <div className='vertical_line'></div>
         </div>
-        {/* Skills */}
-        <section className='container-fluid mt-5 px-0'>
-          <h2 className='font-weight-bold mb-3'>Skills</h2>
-          <ul className='row pl-3'>
-            <li className='col-6 col-md-3'>JavaScript</li>
-            <li className='col-6 col-md-3'>Node.js</li>
-            <li className='col-6 col-md-3'>React</li>
-            <li className='col-6 col-md-3'>Express</li>
-            <li className='col-6 col-md-3'>Sequelize</li>
-            <li className='col-6 col-md-3'>SQLite</li>
-            <li className='col-6 col-md-3'>PostreSQL</li>
-            <li className='col-6 col-md-3'>Pug</li>
-            <li className='col-6 col-md-3'>HTML5</li>
-            <li className='col-6 col-md-3'>CSS3</li>
-            <li className='col-6 col-md-3'>Bootstrap4</li>
-            <li className='col-6 col-md-3'>Git</li>
-          </ul>
-        </section>
-        {/* Projects */}
-        <section className='container-fluid mt-5 px-0'>
-          <h2 className='font-weight-bold'>Projects</h2>
-          <div className='row justify-content-around'>
-            <div className='col-lg-6 mt-5'>
-              <Link to='/project'>
-                <img className='project-img' src={localsPhoto} alt='' />
-              </Link>
-              <h3 className='font-weight-bold mt-3'>Locals</h3>
-              <p className='project-description col-md-9 pl-0 text-secondary'>
-                A full stack application that connects travelers to locals
-                crafting authentic experiences in cities they love.
-              </p>
-              <a className='link-decoration' href='/project'>
-                View Project »
-              </a>
-            </div>
-            <div className='col-lg-6 mt-5'>
-              <Link to='/forecast'>
-                <img className='project-img' src={weatherForecast} alt='' />
-              </Link>
-              <h3 className='font-weight-bold mt-3'>Forecast App</h3>
-              <p className='project-description col-md-9 pl-0 text-secondary'>
-                A five day forecast app that shows a US city forecast based on a
-                user's zip code.
-              </p>
-              <Link className='link-decoration' href='/forecast'>
-                View Project »
-              </Link>
-            </div>
-            <div className='col-lg-6 mt-5'>
-              <img className='project-img' src={Project} alt='' />
-              <h3 className='font-weight-bold mt-3'>Project Name</h3>
-              <p className='project-description col-md-9 pl-0 text-secondary'>
-                A project description...
-              </p>
-              <a className='link-decoration' href='/project'>
-                View Project »
-              </a>
-            </div>
-            <div className='col-lg-6 mt-5'>
-              <img className='project-img' src={Project} alt='' />
-              <h3 className='font-weight-bold mt-3'>Project Name</h3>
-              <p className='project-description col-md-9 pl-0 text-secondary'>
-                A project description...
-              </p>
-              <a className='link-decoration' href='/project'>
-                View Project »
-              </a>
-            </div>
-          </div>
-        </section>
+        <div className='col pl-0 icons'>
+          <a
+            className='icon github m-1 mr-4'
+            href='https://github.com/kzunino'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <i className='fab fa-github fa-lg' />
+          </a>
+          <a
+            className='icon linkedin m-1 mr-4'
+            href='https://www.linkedin.com/in/kylezunino/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <i className='fab fa-linkedin fa-lg' />
+          </a>
+          <a
+            className='icon instagram m-1'
+            href='https://www.instagram.com/kzunino'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <i className='fab fa-instagram fa-lg' />
+          </a>
+        </div>
+      </nav>
+      {/* Heading */}
+      <div className='container mt-5 px-0 ml-sm-1 ml-lg-4'>
+        <h1 className='heading'>
+          Hi, I'm Kyle Zunino.
+          <br />
+          Student, Traveler, and <br />
+          Full Stack JavaScript{' '}
+          <span className='secondary-color'>Developer</span>
+        </h1>
+      </div>{' '}
+      {/* /Heading */}
+      {/* Jumbotron */}
+      <div className='container-fluid mt-5 px-0'>
+        <img src={headerPhoto} alt='kyle' className='kyle' />
+        <p className='col-md-9 pt-4 pl-0 text-secondary'>
+          I am a world-traveling hospitality veteran turned Full Stack
+          JavaScript Web Developer located in the San Francisco Bay Area. I
+          graduated from UC-Berkeley in 2014 and currently a Student-Developer
+          Moderator at Team Treehouse.
+          <br />
+          <br />
+          When I'm not coding, you can find me hiking, traveling to far away
+          lands, vainly attempting to dance salsa, or training in the gym.
+        </p>
       </div>
-    );
-  }
-}
+      {/* Skills */}
+      <section className='container-fluid mt-5 px-0'>
+        <h2 className='font-weight-bold mb-3'>Skills</h2>
+        <ul className='row pl-3'>
+          <li className='col-6 col-md-3'>JavaScript</li>
+          <li className='col-6 col-md-3'>Node.js</li>
+          <li className='col-6 col-md-3'>React</li>
+          <li className='col-6 col-md-3'>Express</li>
+          <li className='col-6 col-md-3'>Sequelize</li>
+          <li className='col-6 col-md-3'>SQLite</li>
+          <li className='col-6 col-md-3'>PostreSQL</li>
+          <li className='col-6 col-md-3'>Pug</li>
+          <li className='col-6 col-md-3'>HTML5</li>
+          <li className='col-6 col-md-3'>CSS3</li>
+          <li className='col-6 col-md-3'>Bootstrap4</li>
+          <li className='col-6 col-md-3'>Git</li>
+        </ul>
+      </section>
+      {/* Projects */}
+      <section className='container-fluid mt-5 px-0'>
+        <h2 className='font-weight-bold'>Projects</h2>
+        <div className='row justify-content-around'>
+          <div className='col-lg-6 mt-5'>
+            <Link to='/locals'>
+              <img className='project-img' src={localsPhoto} alt='' />
+            </Link>
+            <h3 className='font-weight-bold mt-3'>Locals</h3>
+            <p className='project-description col-md-9 pl-0 text-secondary'>
+              A full stack application that connects travelers to locals
+              crafting authentic experiences in cities they love.
+            </p>
+            <a className='link-decoration' href='/locals'>
+              View Project »
+            </a>
+          </div>
+          <div className='col-lg-6 mt-5'>
+            <Link to='/forecast'>
+              <img className='project-img' src={weatherForecast} alt='' />
+            </Link>
+            <h3 className='font-weight-bold mt-3'>Forecast App</h3>
+            <p className='project-description col-md-9 pl-0 text-secondary'>
+              A five day forecast app that shows a US city forecast based on a
+              user's zip code.
+            </p>
+            <Link className='link-decoration' href='/forecast'>
+              View Project »
+            </Link>
+          </div>
+          <div className='col-lg-6 mt-5'>
+            <img className='project-img' src={Project} alt='' />
+            <h3 className='font-weight-bold mt-3'>Project Name</h3>
+            <p className='project-description col-md-9 pl-0 text-secondary'>
+              A project description...
+            </p>
+            <a className='link-decoration' href='/project'>
+              View Project »
+            </a>
+          </div>
+          <div className='col-lg-6 mt-5'>
+            <img className='project-img' src={Project} alt='' />
+            <h3 className='font-weight-bold mt-3'>Project Name</h3>
+            <p className='project-description col-md-9 pl-0 text-secondary'>
+              A project description...
+            </p>
+            <a className='link-decoration' href='/project'>
+              View Project »
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
