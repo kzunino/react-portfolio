@@ -4,10 +4,12 @@ import {Link} from 'react-router-dom';
 import headerPhoto from './img/kyle_photo.jpg';
 import weatherForecast from './img/weatherForcast.png';
 import localsPhoto from './img/locals.png';
-import Resume from './img/kyleZResume.pdf';
 import traveBudget from './img/travelBudget.png';
+import ucBerkeleySeal from './img/UC_Berkeley_Seal.png';
+import treehouseSeal from './img/treehouse-seal.png';
 
 const Home = () => {
+  //triggers the elements to fade in when the window loads
   const [fadeElement, setFadeElements] = useState('fade-element');
 
   useEffect(() => {
@@ -46,9 +48,8 @@ const Home = () => {
           </a>
           <a
             className='icon resume m-1'
-            href={Resume}
+            href='https://drive.google.com/file/d/199otrfuvg6wp0lGSeYYNlc05KnW2x0vK/view?usp=sharing'
             target='_blank'
-            download
             rel='noopener noreferrer'
           >
             <i className='far fa-file fa-lg' />
@@ -73,19 +74,53 @@ const Home = () => {
         className={`container-fluid mt-4 mt-md-5 px-0 fade-element ${fadeElement}`}
       >
         <img src={headerPhoto} alt='kyle' className='kyle' />
-        <p className='col-md-9 pt-4 pl-0 pr-0 text-secondary'>
-          I am a world-traveling hospitality veteran turned Full Stack
-          JavaScript Web Developer located in the San Francisco Bay Area. I
-          graduated from UC-Berkeley in 2014 and currently a Student-Developer
-          Moderator at Team Treehouse.
-          <br />
-          <br />
-          When I'm not coding, you can find me hiking, traveling to far away
-          lands, vainly attempting to dance salsa, or training in the gym.
-        </p>
+        <div className=' container-fluid row  justify-content-between m-0 p-0'>
+          <p className='col-12 col-md-6 pt-4 pl-0 pr-0 text-secondary'>
+            I am a world-traveling hospitality veteran turned Full Stack
+            JavaScript Web Developer located in the San Francisco Bay Area. I
+            graduated from UC-Berkeley in 2014 and I am currently a
+            Student-Developer Moderator a Treehouse.
+            <br />
+            <br />
+            My interest in programming happened while I was teaching English and
+            studying Spanish in Medellin, Colombia. I began networking with
+            international expats and digital nomads and was introduced to the
+            world of programming through a roommate. I've been hooked ever
+            since.
+            <br />
+            <br />
+          </p>
+          <p className='col-12 col-md-5 pt-4 pl-0 pr-0 text-secondary'>
+            When I am not coding, you can find me hiking, traveling to far away
+            lands, or vainly attempting to dance salsa. I created this portfolio
+            so I could showcase my coding journey and make it easier for you to
+            connect with me.
+          </p>
+        </div>
       </div>
+      {/* Education */}
+      <section
+        className={`container-fluid mt-5 mt-md-2 px-0 fade-element ${fadeElement}`}
+      >
+        <h2 className='font-weight-bold mb-3'>Education</h2>
+        <div className='mb-4'>
+          <img src={ucBerkeleySeal} alt='UC Berkeley Seal' className='seal' />
+          <h6 className='font-weight-bold mt-2 mb-0'>UC Berkeley</h6>
+
+          <p className='degree'>Bachelor's Degree in Sociology</p>
+          <p className='degree small'>(2014)</p>
+        </div>
+        <div>
+          <img src={treehouseSeal} alt='Treehouse Seal' className='seal' />
+          <h6 className='font-weight-bold mt-2 mb-0'>Treehouse</h6>
+          <p className='degree'>Full Stack JavaScript TechDegree</p>
+          <p className='degree small'>(2019)</p>
+        </div>
+      </section>
       {/* Skills */}
-      <section className='container-fluid mt-5 px-0'>
+      <section
+        className={`container-fluid mt-5 px-0 fade-element ${fadeElement}`}
+      >
         <h2 className='font-weight-bold mb-3'>Skills</h2>
         <ul className='row pl-3'>
           <li className='col-6 col-md-3'>
@@ -127,7 +162,9 @@ const Home = () => {
         </ul>
       </section>
       {/* Projects */}
-      <section className='container-fluid mt-5 px-0'>
+      <section
+        className={`container-fluid mt-5 px-0 fade-element ${fadeElement}`}
+      >
         <h2 className='font-weight-bold'>Projects</h2>
         <div className='row justify-content-around'>
           <div className='col-md-6 mt-5'>
