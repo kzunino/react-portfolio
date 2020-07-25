@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import weatherForecast from './img/fullWeather.png';
 import weatherForecast2 from './img/fullWeather2.png';
 import reactLogo from './img/react-icon.png';
 import herokuLogo from './img/heroku-icon.png';
 
 const Forecast = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='container-fluid p-2'>
       <main className='container-fluid mt-5 px-0'>

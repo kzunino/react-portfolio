@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import localsLrg from './img/locals-lrg.png';
 import reactLogo from './img/react-icon.png';
 import herokuLogo from './img/heroku-icon.png';
@@ -8,6 +8,10 @@ import postgresLogo from './img/postgres-logo.png';
 import iphoneLocals from './img/iphone-locals.png';
 
 const Locals = () => {
+  //scrolls to top of page on render
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='container-fluid p-2'>
       <main className='container-fluid mt-5 px-0'>

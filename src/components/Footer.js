@@ -7,10 +7,20 @@ export default () => {
         <a href='/' id='home' className='mr-auto'>
           <strong>KZ.</strong>
         </a>
-        <a className='mr-3 link-decoration' href='/'>
+        <a
+          className='mr-3 link-decoration'
+          href='https://github.com/kzunino'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           GitHub
         </a>
-        <a className='link-decoration' href='/'>
+        <a
+          className='link-decoration'
+          href='https://www.linkedin.com/in/kylezunino/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           LinkedIn
         </a>
       </div>
