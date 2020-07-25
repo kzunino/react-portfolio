@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import headerPhoto from './img/kyle_photo.jpg';
@@ -8,9 +8,14 @@ import Resume from './img/kyleZResume.pdf';
 import traveBudget from './img/travelBudget.png';
 
 const Home = () => {
+  const [fadeElement, setFadeElements] = useState('fade-element');
+
+  useEffect(() => {
+    setFadeElements('fade-in');
+  }, []);
   return (
     <div className='container-fluid pt-2 px-lg-0 bg-bracket'>
-      <nav className='nav row mt-5 ml-sm-2'>
+      <nav className={`nav row mt-5 ml-sm-2 fade-element ${fadeElement}`}>
         <div className='col-3 align-self-center'>
           <div className='vertical_line'></div>
         </div>
@@ -51,7 +56,9 @@ const Home = () => {
         </div>
       </nav>
       {/* Heading */}
-      <div className='container mt-4 mt-md-5 px-0 ml-sm-1 ml-lg-4'>
+      <div
+        className={`container mt-4 mt-md-5 px-0 ml-sm-1 ml-lg-4 fade-element ${fadeElement}`}
+      >
         <h1 className='heading'>
           Hi, I'm Kyle Zunino.
           <br />
@@ -62,7 +69,9 @@ const Home = () => {
       </div>{' '}
       {/* /Heading */}
       {/* Jumbotron */}
-      <div className='container-fluid mt-4 mt-md-5 px-0'>
+      <div
+        className={`container-fluid mt-4 mt-md-5 px-0 fade-element ${fadeElement}`}
+      >
         <img src={headerPhoto} alt='kyle' className='kyle' />
         <p className='col-md-9 pt-4 pl-0 pr-0 text-secondary'>
           I am a world-traveling hospitality veteran turned Full Stack

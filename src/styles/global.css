@@ -31,6 +31,19 @@ p {
   line-height: 2rem;
 }
 
+.fade-element {
+  opacity: 0;
+  transition: 1s;
+}
+.fade-element-2 {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
 .icon {
   display: inline-block;
 }
