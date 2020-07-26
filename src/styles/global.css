@@ -140,6 +140,8 @@ p {
   line-height: 18px;
 }
 
+/* Project Section */
+
 .project-img {
   transition: transform 0.5s;
   width: 100%;
@@ -163,6 +165,75 @@ p {
   width: 100%;
   height: auto;
 }
+
+/* Instagram Grid */
+
+.instagramGrid {
+}
+
+.instagramGrid-right {
+  margin-top: 40px;
+
+  max-width: 100%;
+  flex: 1 1 100%;
+  padding: 0px;
+}
+
+.instagramGrid-left {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'Left Left centertop Right Right'
+    'Left Left centerbot Right Right';
+  flex: 1 1 100%;
+  padding: 0px;
+  gap: 10px;
+}
+
+.grid-left {
+  background-image: url('../components/img/kyle_photo.jpg');
+  object-fit: cover;
+
+  height: 220px;
+  background-size: cover;
+  grid-area: Left / Left / Left / Left;
+  border-radius: 4px;
+  background-position: left center;
+}
+
+.center-top {
+  background-image: url('../components/img/center-top.png');
+  object-fit: cover;
+  background-size: cover;
+  height: auto;
+  grid-area: centertop / centertop / centertop / centertop;
+  border-radius: 4px;
+  background-position: right center;
+}
+
+.center-bottom {
+  background-image: url('../components/img/center-bottom.png');
+  object-fit: cover;
+  background-size: cover;
+  height: auto;
+  grid-area: centerbot / centerbot / centerbot / centerbot;
+  border-radius: 4px;
+  background-position: center top;
+}
+
+.grid-right {
+  background-image: url('../components/img/grid-right.png');
+  object-fit: cover;
+  height: 220px;
+  background-size: cover;
+  grid-area: Right / Right / Right / Right;
+  border-radius: 4px;
+  background-position: right top;
+}
+
+/* Project Stack */
 .program-icon {
   font-size: 35px;
   padding: 15px;
@@ -205,6 +276,15 @@ p {
   }
 }
 
+@media screen and (max-width: 560px) {
+  .grid-left {
+    height: 130px;
+  }
+  .grid-right {
+    height: 130px;
+  }
+}
+
 /* xs < 768 */
 @media screen and (max-width: 767px) {
   .project-img-lrg {
@@ -237,5 +317,12 @@ p {
 @media screen and (min-width: 1200px) {
   .heading {
     font-size: 65px;
+  }
+
+  .grid-right {
+    height: 260px;
+  }
+  .grid-left {
+    height: 260px;
   }
 }

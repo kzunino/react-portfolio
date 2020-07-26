@@ -140,7 +140,9 @@ const Home = () => {
 
           <div className='col-12 col-sm-6 col-md-4 '>
             <h6 className='font-weight-bold m-0'>Frontend Frameworks:</h6>
-            <p className='technologies small'>( React / jQuery / Pug.js )</p>
+            <p className='technologies small'>
+              ( React / jQuery / Bootstrap 4)
+            </p>
           </div>
 
           <div className='col-12 col-sm-6 col-md-4 '>
@@ -155,45 +157,6 @@ const Home = () => {
             </p>
           </div>
         </div>
-
-        {/* <ul className='row pl-3'>
-          <li className='col-6 col-md-3'>
-            <span>JavaScript</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>Node.js</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>React</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>Express</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>Sequelize</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>SQLite</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>PostgreSQL</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>Pug</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>HTML5</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>CSS3</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>Bootstrap4</span>
-          </li>
-          <li className='col-6 col-md-3'>
-            <span>Git</span>
-          </li>
-        </ul> */}
       </section>
       {/* Projects */}
       <section
