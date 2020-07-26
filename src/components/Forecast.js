@@ -1,15 +1,19 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import weatherForecast from './img/fullWeather.png';
 import weatherForecast2 from './img/fullWeather2.png';
 import reactLogo from './img/react-icon.png';
 import herokuLogo from './img/heroku-icon.png';
 
 const Forecast = () => {
+  //triggers the elements to fade in when the window loads
+  const [fadeElement, setFadeElements] = useState('fade-element');
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    setFadeElements('fade-in');
   }, []);
   return (
-    <div className='container-fluid p-2'>
+    <div className={`container-fluid p-2 fade-element ${fadeElement}`}>
       <main className='container-fluid mt-5 px-0'>
         <h1 className='font-weight-bold mt-5'>Weather Forecast</h1>
         <p className='col-md-9 p-0 text-secondary'>
@@ -19,7 +23,7 @@ const Forecast = () => {
           OpenWeatherMap API.
         </p>
       </main>
-      <section className='container-fluid mt-5 px-0'>
+      <section className={`container-fluid mt-5 px-0`}>
         <table className='table table-borderless table-sm'>
           <thead>
             <tr>
@@ -73,10 +77,10 @@ const Forecast = () => {
       <img
         src={weatherForecast}
         alt='forecast weather app'
-        className='project-main-photo'
+        className={`project-main-photo`}
       />
 
-      <section className='container-fluid mt-5 px-0'>
+      <section className={`container-fluid mt-5 px-0`}>
         <h2 className='mt-5'>Web Stack</h2>
         <div className='row container-fluid pr-0 mr-sm-0 align-items-center'>
           <p className='col-md-7 p-0 text-secondary'>
@@ -115,7 +119,7 @@ const Forecast = () => {
         </div>
       </section>
 
-      <section className='container-fluid mt-5 px-0'>
+      <section className={`container-fluid mt-5 px-0`}>
         <h2 className='mt-5 text-center'>Problems &amp; Afterthoughts</h2>
         <div className='row justify-content-center'>
           <p className='col-md-9 text-center text-secondary'>
@@ -146,9 +150,9 @@ const Forecast = () => {
       <img
         src={weatherForecast2}
         alt='forecast weather app'
-        className='project-main-photo'
+        className={`project-main-photo`}
       />
-      <div className='row justify-content-center'>
+      <div className={`row justify-content-center`}>
         <div className='col-12 col-md-2 text-center'>
           <a
             className='link-decoration '

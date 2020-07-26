@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import localsLrg from './img/locals-lrg.png';
 import reactLogo from './img/react-icon.png';
 import herokuLogo from './img/heroku-icon.png';
@@ -8,12 +8,15 @@ import postgresLogo from './img/postgres-logo.png';
 import iphoneLocals from './img/iphone-locals.png';
 
 const Locals = () => {
-  //scrolls to top of page on render
+  //triggers the elements to fade in when the window loads
+  const [fadeElement, setFadeElements] = useState('fade-element');
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    setFadeElements('fade-in');
   }, []);
   return (
-    <div className='container-fluid p-2'>
+    <div className={`container-fluid p-2 fade-element ${fadeElement}`}>
       <main className='container-fluid mt-5 px-0'>
         <h1 className='font-weight-bold mt-5'>Locals</h1>
         <p className='col-md-9 p-0 text-secondary'>
@@ -24,7 +27,7 @@ const Locals = () => {
           unique perspective of the place that they are visiting.
         </p>
       </main>
-      <section className='container-fluid mt-5 px-0'>
+      <section className={`container-fluid mt-5 px-0`}>
         <table className='table table-borderless table-sm'>
           <thead>
             <tr>

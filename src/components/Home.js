@@ -88,7 +88,6 @@ const Home = () => {
             world of programming through a roommate. I've been hooked ever
             since.
             <br />
-            <br />
           </p>
           <p className='col-12 col-md-5 pt-4 pl-0 pr-0 text-secondary'>
             When I am not coding, you can find me hiking, traveling to far away
@@ -103,18 +102,20 @@ const Home = () => {
         className={`container-fluid mt-5 mt-md-2 px-0 fade-element ${fadeElement}`}
       >
         <h2 className='font-weight-bold mb-3'>Education</h2>
-        <div className='mb-4'>
-          <img src={ucBerkeleySeal} alt='UC Berkeley Seal' className='seal' />
-          <h6 className='font-weight-bold mt-2 mb-0'>UC Berkeley</h6>
+        <div className='row justify-content-around'>
+          <div className='col-12 col-md-5 mb-4'>
+            <img src={ucBerkeleySeal} alt='UC Berkeley Seal' className='seal' />
+            <h6 className='font-weight-bold mt-2 mb-0'>UC Berkeley</h6>
 
-          <p className='degree'>Bachelor's Degree in Sociology</p>
-          <p className='degree small'>(2014)</p>
-        </div>
-        <div>
-          <img src={treehouseSeal} alt='Treehouse Seal' className='seal' />
-          <h6 className='font-weight-bold mt-2 mb-0'>Treehouse</h6>
-          <p className='degree'>Full Stack JavaScript TechDegree</p>
-          <p className='degree small'>(2019)</p>
+            <p className='degree'>Bachelor's Degree in Sociology</p>
+            <p className='degree small'>(2014)</p>
+          </div>
+          <div className='col-12 col-md-5'>
+            <img src={treehouseSeal} alt='Treehouse Seal' className='seal' />
+            <h6 className='font-weight-bold mt-2 mb-0'>Treehouse</h6>
+            <p className='degree'>Full Stack JavaScript TechDegree</p>
+            <p className='degree small'>(2019)</p>
+          </div>
         </div>
       </section>
       {/* Skills */}
@@ -122,7 +123,40 @@ const Home = () => {
         className={`container-fluid mt-5 px-0 fade-element ${fadeElement}`}
       >
         <h2 className='font-weight-bold mb-3'>Skills</h2>
-        <ul className='row pl-3'>
+        <div className='row'>
+          <div className='col-12 col-sm-6 col-md-4 '>
+            <h6 className='font-weight-bold m-0'>Languages:</h6>
+            <p className='technologies small'>
+              ( JavaScript / Python - in progress )
+            </p>
+          </div>
+
+          <div className='col-12 col-sm-6 col-md-4 '>
+            <h6 className='font-weight-bold m-0'>
+              Web Design &amp; Development
+            </h6>
+            <p className='technologies small'>( HTML / CSS )</p>
+          </div>
+
+          <div className='col-12 col-sm-6 col-md-4 '>
+            <h6 className='font-weight-bold m-0'>Frontend Frameworks:</h6>
+            <p className='technologies small'>( React / jQuery / Pug.js )</p>
+          </div>
+
+          <div className='col-12 col-sm-6 col-md-4 '>
+            <h6 className='font-weight-bold m-0'>Backend Frameworks:</h6>
+            <p className='technologies small'>( Node.js / Express )</p>
+          </div>
+
+          <div className='col-12 col-sm-6 col-md-4 '>
+            <h6 className='font-weight-bold m-0'>Database Managements:</h6>
+            <p className='technologies small'>
+              ( Postgres / SQLite / MongoDB / Sequelize ORM )
+            </p>
+          </div>
+        </div>
+
+        {/* <ul className='row pl-3'>
           <li className='col-6 col-md-3'>
             <span>JavaScript</span>
           </li>
@@ -159,7 +193,7 @@ const Home = () => {
           <li className='col-6 col-md-3'>
             <span>Git</span>
           </li>
-        </ul>
+        </ul> */}
       </section>
       {/* Projects */}
       <section
