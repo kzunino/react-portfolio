@@ -1,4 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
+import travelBudget from './img/travelBudget.png';
+import locals from './img/locals.png';
 import weatherForecast from './img/fullWeather.png';
 import weatherForecast2 from './img/fullWeather2.png';
 import reactLogo from './img/react-icon.png';
@@ -134,16 +137,15 @@ const Forecast = () => {
             One way to improve this project would be to save the zip code in
             local storage or as a cookie so the user doesn't have to re-enter
             their zip code every time the page refreshes or loads. It's a slight
-            hassle to constantly have to input a your zip code. Additionally, it
+            hassle to constantly have to input your zip code. Additionally, it
             would be awesome if this project could be global, however, it only
             accepts valid US zip codes.
             <br></br>
             <br></br>
             Another improvement would be to make it more responsive. As it is
             now, the application is nowhere near ready for viewing on a mobile
-            device. I didn't really take this into account when I started
-            because I wanted to make a widget-like application, but it could be
-            made into a smaller, clean mobile version as well.
+            device. I didn't really take this into account when I started, but
+            it could be made into a smaller, responsive mobile version as well.
           </p>
         </div>
       </section>
@@ -174,6 +176,38 @@ const Forecast = () => {
           </a>
         </div>
       </div>
+
+      {/* Other Projects */}
+      <section className={`container-fluid mt-5 px-0`}>
+        <h2 className='font-weight-bold'>Explore other projects</h2>
+        <div className='row justify-content-around'>
+          <div className='col-md-6 mt-5'>
+            <Link to='/locals'>
+              <img className='project-img' src={locals} alt='' />
+            </Link>
+            <h3 className='font-weight-bold mt-3'>Locals</h3>
+            <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
+              A full stack application that connects travelers to locals
+              crafting authentic experiences in cities they love.
+            </p>
+            <Link className='link-decoration' to='/locals'>
+              View Project »
+            </Link>
+          </div>
+
+          <div className='col-md-6 mt-5'>
+            <img className='project-img' src={travelBudget} alt='' />
+
+            <h3 className='font-weight-bold mt-3'>Travel Budget</h3>
+            <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
+              An app to help you budget smart, save more, and travel longer.
+            </p>
+            <p className='project-description text-center pl-0 pr-0 text-secondary'>
+              <strong>Coming soon...</strong>
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

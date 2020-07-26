@@ -1,4 +1,8 @@
 import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
+import weatherForecast from './img/weatherForcast.png';
+import travelBudget from './img/travelBudget.png';
+
 import localsLrg from './img/locals-lrg.png';
 import reactLogo from './img/react-icon.png';
 import herokuLogo from './img/heroku-icon.png';
@@ -16,7 +20,7 @@ const Locals = () => {
     setFadeElements('fade-in');
   }, []);
   return (
-    <div className={`container-fluid p-2 fade-element ${fadeElement}`}>
+    <div className={`container-fluid p-0 fade-element ${fadeElement}`}>
       <main className='container-fluid mt-5 px-0'>
         <h1 className='font-weight-bold mt-5'>Locals</h1>
         <p className='col-md-9 p-0 text-secondary'>
@@ -247,6 +251,38 @@ const Locals = () => {
           </a>
         </div>
       </div>
+
+      {/* Other Projects */}
+      <section className={`container-fluid mt-5 px-0`}>
+        <h2 className='font-weight-bold'>Explore other projects</h2>
+        <div className='row justify-content-around'>
+          <div className='col-md-6 mt-5'>
+            <Link to='/forecast'>
+              <img className='project-img' src={weatherForecast} alt='' />
+            </Link>
+            <h3 className='font-weight-bold mt-3'>Forecast App</h3>
+            <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
+              A five day forecast app that shows a US city forecast based on a
+              user's zip code.
+            </p>
+            <Link className='link-decoration' to='/forecast'>
+              View Project »
+            </Link>
+          </div>
+
+          <div className='col-md-6 mt-5'>
+            <img className='project-img' src={travelBudget} alt='' />
+
+            <h3 className='font-weight-bold mt-3'>Travel Budget</h3>
+            <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
+              An app to help you budget smart, save more, and travel longer.
+            </p>
+            <p className='project-description text-center pl-0 pr-0 text-secondary'>
+              <strong>Coming soon...</strong>
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

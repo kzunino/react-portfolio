@@ -16,7 +16,7 @@ const Home = () => {
     setFadeElements('fade-in');
   }, []);
   return (
-    <div className='container-fluid pt-2 px-lg-0 bg-bracket'>
+    <div className='container-fluid p-0 bg-bracket'>
       <nav className={`nav row mt-5 ml-sm-2 fade-element ${fadeElement}`}>
         <div className='col-3 align-self-center'>
           <div className='vertical_line'></div>
@@ -99,9 +99,9 @@ const Home = () => {
       </div>
       {/* Education */}
       <section
-        className={`container-fluid mt-5 mt-md-2 px-0 fade-element ${fadeElement}`}
+        className={`container-fluid mt-5 px-0 fade-element ${fadeElement}`}
       >
-        <h2 className='font-weight-bold mb-3'>Education</h2>
+        <h2 className='mb-3'>Education</h2>
         <div className='row justify-content-around'>
           <div className='col-12 col-md-5 mb-4'>
             <img src={ucBerkeleySeal} alt='UC Berkeley Seal' className='seal' />
@@ -122,7 +122,7 @@ const Home = () => {
       <section
         className={`container-fluid mt-5 px-0 fade-element ${fadeElement}`}
       >
-        <h2 className='font-weight-bold mb-3'>Skills</h2>
+        <h2 className='mb-3'>Skills</h2>
         <div className='row'>
           <div className='col-12 col-sm-6 col-md-4 '>
             <h6 className='font-weight-bold m-0'>Languages:</h6>
@@ -162,9 +162,9 @@ const Home = () => {
       <section
         className={`container-fluid mt-5 px-0 fade-element ${fadeElement}`}
       >
-        <h2 className='font-weight-bold'>Projects</h2>
+        <h2 className='mb-3'>Projects</h2>
         <div className='row justify-content-around'>
-          <div className='col-md-6 mt-5'>
+          <div className='col-md-6'>
             <Link to='/locals'>
               <img className='project-img' src={localsPhoto} alt='' />
             </Link>
@@ -177,7 +177,7 @@ const Home = () => {
               View Project »
             </Link>
           </div>
-          <div className='col-md-6 mt-5'>
+          <div className='col-md-6'>
             <Link to='/forecast'>
               <img className='project-img' src={weatherForecast} alt='' />
             </Link>
