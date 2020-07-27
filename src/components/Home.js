@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 
-import headerPhoto from './img/kyle_photo.jpg';
+import headerPhoto from './img/portfolio_picture.jpeg';
 import weatherForecast from './img/weatherForcast.png';
 import localsPhoto from './img/locals.png';
 import traveBudget from './img/travelBudget.png';
