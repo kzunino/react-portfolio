@@ -5,7 +5,7 @@ export default () => {
   return (
     <>
       <section className='container-fluid mt-5 p-0'>
-        <h2 className='mb-3'>Let's connect and build something!</h2>
+        <h2 className='mb-3'>Let's connect and build something</h2>
         <a
           className='email link-decoration mb-1'
           href='mailto:kzunino@gmail.com'

@@ -12,7 +12,11 @@ const Instagram = () => {
         <div className='center-bottom '></div>
         <div className='grid-right'></div>
       </div>
-      <a className='link-decoration' href='https://www.instagram.com/kzunino'>
+      <a
+        className='link-decoration'
+        title='Instagram'
+        href='https://www.instagram.com/kzunino'
+      >
         See More »
       </a>
     </section>
