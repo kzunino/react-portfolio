@@ -234,7 +234,7 @@ const Locals = () => {
         <div className='col-12 col-md-2 text-center'>
           <a
             className='link-decoration '
-            href='https://github.com/kzunino/react-weather-app'
+            href='https://github.com/kzunino/locals'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -244,7 +244,7 @@ const Locals = () => {
         <div className='col-12 col-md-2 text-center'>
           <a
             className='link-decoration'
-            href='https://kz-react-weather-app.herokuapp.com/'
+            href='https://locals-deploy.herokuapp.com/home'
             target='_blank'
             rel='noopener noreferrer'
           >
