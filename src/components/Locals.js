@@ -25,10 +25,10 @@ const Locals = () => {
         <h1 className='font-weight-bold mt-5'>Locals</h1>
         <p className='col-md-9 p-0 text-secondary'>
           Locals is a web application idea I had while backpacking and living in
-          South America. It's a place to connect travelers to authentic local
-          experiences outside the purview of mass tourism. The idea is for
-          people can create their own micro-businesses and show visitors a
-          unique perspective of the place that they are visiting.
+          South America. The goal is to connect travelers to authentic local
+          experiences outside the purview of mass tourism and help locals create
+          their own micro-businesses in order to showcase their unique corner of
+          the world.
         </p>
       </main>
       <section className={`container-fluid mt-5 px-0`}>
@@ -106,9 +106,9 @@ const Locals = () => {
           <p className='col-md-7 p-0 text-secondary mb-5'>
             For this project I created a full stack web application using
             PostgreSQL, Express.js, React, and Node.js––i.e. the PERN stack. I
-            chose PostgreSQL instead of a noSQL database because of its long
-            established legacy and popularity. Instead of raw queries I opted to
-            use Sequelize ORM for its excellent documentation readable syntax.
+            chose PostgreSQL over a noSQL database for its long established
+            legacy and popularity. Instead of raw queries I opted to use
+            Sequelize ORM for its excellent documentation and readable syntax.
             <br></br> <br></br>I built the backend using Node.js with Express to
             handle routing and http requests. For authentication I'm using
             Express-Validator, Bcrypt, and JSON Web Tokens. I had originally
@@ -119,9 +119,9 @@ const Locals = () => {
             <br></br> <br></br>
             The front is built with React and ReactStrap. My goal was to
             practice using React Hooks for state management instead of using
-            class syntax because the React ecosystem seems to be moving in that
-            direction. To handle global state and making http requests I opted
-            to use React Context with Axios. I chose Heroku to host the
+            class syntax because the React ecosystem seems to be evolving in
+            that direction. To handle global state and making http requests I
+            opted to use React Context with Axios. I chose Heroku to host the
             application because it is easy to use and the Postgres addon works
             great!
           </p>
@@ -190,34 +190,35 @@ const Locals = () => {
         <div className='row justify-content-center'>
           <p className='col-md-9 text-center text-secondary'>
             This was the first full stack project that I created from scratch,
-            so my biggest challenge was trying to figure out what my idea really
-            was and what features made sense to include. For example, I wanted
-            there to be a message board where users could interact in addition
-            to locals creating experiences. The message board might become a
-            place where local businesses could promote events and people could
-            interact and share fun things to do around a city. The message board
-            needs further development to allow users to search localized message
-            boards to the areas they wish to explore.
+            so my biggest challenge was figuring out what my idea really was and
+            which features to include. For example, I wanted a message board
+            where users could interact. I envisioned a place where local
+            residents and businesses would promote events like a virtual
+            bulletin board, while also driving traffic to the site. The message
+            board needs further development to allow users to search more
+            localized message boards for the areas they wish to explore.
             <br></br>
             <br></br>
-            Because this was a personal project, I didn't make any way for a
-            user to book a tour. If this were a real business, I would need to
-            create a way to book an experience and add more features to the
-            dashboard such as a calendar. The search feature is a little
-            underdeveloped as well. If you search a first name, last name, or
-            hit a key word in the title the query will return a result, but the
-            longer the search query is, the less likely it will return a match
-            because it will be looking for exact matches.
+            Because this was a personal project, I didn't create a way for a
+            user to book a tour. To launch as a business, I would need to build
+            a booking feature and add a calendar to the dashboard. The search
+            feature is a little underdeveloped as well. If you search a first
+            name, last name, or hit a key word in the title, the query will
+            return a result but the longer the search query, the less likely it
+            will return a match because it will be looking for exact matches.
+            And the last big fix would be setting up a stricter verification
+            process to ensure the identity of hosts. For the purpose of this app
+            I just made a verification switch at the bottom of the profile.
             <br></br>
             <br></br>
-            Overall this project taught me a lot and I was able to learn and
-            practice many new technologies. The sheer amount of possible
-            features to add to a project like this are enormous, and there is a
-            lot of room for improvement and development. If I were to pursue
-            this project more, my main concern would be strengthening the safety
-            aspect with verifying and vetting hosts. You'd need a way to make
-            sure the experiences and hosts were high quality in order to ensure
-            the safety of the users.
+            Overall, this project taught me a lot and gave me an opportunity to
+            learn and practice many new technologies. There are countless
+            features that could be added to a project like this and there is a
+            lot of room for improvement. If I were to further pursue this
+            project, my main priority would be strengthening the safety
+            standards by verifying and vetting hosts. I’d want to ensure the
+            experiences and hosts were high-quality to guarantee the safety of
+            the users and capture repeat users.
           </p>
         </div>
       </section>

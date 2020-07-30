@@ -82,12 +82,12 @@ const Home = () => {
           <p className='col-12 col-md-6 pt-4 pl-0 pr-0 text-secondary'>
             I am a world-traveling hospitality veteran turned Full Stack
             JavaScript Web Developer located in the San Francisco Bay Area. I
-            graduated from UC-Berkeley in 2014 and I am currently a
+            graduated from UC-Berkeley in 2014 and I’m currently a
             Student-Developer Moderator at Treehouse.
             <br />
             <br />
-            My interest in programming happened while I was teaching English and
-            studying Spanish in Medellin, Colombia. I began networking with
+            I became interested in programming while I was teaching English and
+            studying Spanish in Medellin, Colombia. I started networking with
             international expats and digital nomads and was introduced to the
             world of programming through a roommate. I've been learning ever
             since.
@@ -95,9 +95,9 @@ const Home = () => {
           </p>
           <p className='col-12 col-md-5 pt-4 pl-0 pr-0 text-secondary'>
             When I am not coding, you can find me hiking, traveling to far away
-            lands, or vainly attempting to dance salsa. I created this portfolio
-            so I could showcase my coding journey and make it easier for you to
-            connect with me.
+            lands, or helplessly attempting to dance salsa. I created this
+            portfolio to showcase my coding journey and make it easier for you
+            and I to connect.
           </p>
         </div>
       </div>
