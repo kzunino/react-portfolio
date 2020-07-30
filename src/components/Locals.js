@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
-import weatherForecast from './img/weatherForcast.png';
+import weatherForecast from './img/forecastMain.png';
 import travelBudget from './img/travelBudget.png';
 
 import localsLrg from './img/locals-lrg.png';

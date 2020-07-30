@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import headerPhoto from './img/portfolio_picture.jpeg';
-import weatherForecast from './img/weatherForcast.png';
+import weatherForecast from './img/forecastMain.png';
 import localsPhoto from './img/locals.png';
 import traveBudget from './img/travelBudget.png';
 import ucBerkeleySeal from './img/UC_Berkeley_Seal.png';
@@ -82,7 +82,7 @@ const Home = () => {
           <p className='col-12 col-md-6 pt-4 pl-0 pr-0 text-secondary'>
             I am a world-traveling hospitality veteran turned Full Stack
             JavaScript Web Developer located in the San Francisco Bay Area. I
-            graduated from UC-Berkeley in 2014 and I’m currently a
+            graduated from UC-Berkeley in 2014 and I am currently a
             Student-Developer Moderator at Treehouse.
             <br />
             <br />

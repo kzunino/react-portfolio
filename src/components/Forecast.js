@@ -22,7 +22,8 @@ const Forecast = () => {
         <p className='col-md-9 p-0 text-secondary'>
           Weather Forecast is a simple application I created after learning the
           basics of CSS. This project gave me a chance to focus on styling and
-          managing large data sets from OpenWeatherMap API.
+          managing large data sets from OpenWeatherMap API. Warning: not
+          optimized for mobile devices.
         </p>
       </main>
       <section className={`container-fluid mt-5 px-0`}>
