@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/global.css';
 
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 
 //Import Components
 import Header from './components/Header';
@@ -24,6 +24,7 @@ const App = ({history}) => {
         <Route path='/project' component={Project} />
         <Route path='/forecast' component={Forecast} />
         <Route path='/locals' component={Locals} />
+        <Redirect to='/' />
       </Switch>
 
       <Contact />

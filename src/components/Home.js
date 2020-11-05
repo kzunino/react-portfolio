@@ -52,7 +52,7 @@ const Home = () => {
           <a
             className='icon resume m-1'
             title='Resume'
-            href='https://drive.google.com/file/d/199otrfuvg6wp0lGSeYYNlc05KnW2x0vK/view?usp=sharing'
+            href='https://drive.google.com/file/d/14ArfjYQMvfUGwVtq8chTt3gYesQafWuG/view?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
           >
