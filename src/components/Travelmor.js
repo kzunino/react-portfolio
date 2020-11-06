@@ -119,9 +119,9 @@ const Travelmor = () => {
             a bunch of css files.
             <br></br> <br></br>The backend is written in Django with Django Rest Framework.
             I wanted to try and branch out from Node.js and practice my Python skills. Django
-            also comes with some great features right out of the box such as their admin dashboard feature.
-            Django Rest Framework makes setting up token authentication easy and customizable,
-            while also integrating well with PostgreSQL.
+            also comes with some great features right out of the box such as their prebuilt admin dashboard.
+            Django Rest Framework makes setting up token authentication painless,
+            while also integrating easily with PostgreSQL.
             <br></br> <br></br>
             The front end is built with React using Redux for global state handling. This was
             my first time using Redux and I really enjoyed the ease of updating state with JavaScript
@@ -194,11 +194,11 @@ const Travelmor = () => {
           <p className='col-md-9 text-center text-secondary'>
             As with any project, I ran into bumps along the way. One of my biggest
             troubles was organizing and structuring the code. I found myself designing,
-            building, and then refactoring a lot to make the project more maintainable. I tried to 
-            keep the codebase as reusable as possible. One of the difficulties I had was handling
-            dates and timezones. I used Moment.js to handle date parsing and calculations. It took me a few days and
-            lot of research to figure out how dates should be stored in order to account for differences 
-            in timezones. I settled on storing all dates in UTC when stored in the database and then I used Moment to parse
+            building, and then refactoring a lot to make the project more maintainable and as 
+            reusable as possible. Another difficulty I had was handling dates and timezones. I used
+            Moment.js to handle date parsing and calculations. It took me a few days and
+            lot of research to figure out how dates should be stored in order to account for timezone differences. 
+            I settled on storing all dates in UTC format in the database and then I used Moment.js to parse
             the dates on the client side into the local timezone.
     
             <br></br>
@@ -207,10 +207,12 @@ const Travelmor = () => {
             If the project is over a month long, I should change the
             trip history graphs to toggle between months of the trip instead of display each
             and every day of the trip on one continuous graph. The design breaks when the trip becomes too long.
-            The next improvement I would make would be to add unit testing to the components,
-            so I can more easily track down bugs and make sure the calculations output the correct
-            values. After I had people test my app, I ran into a lot of unexpected behavior, usually stemming
-            from the date range of the trip and the current date from which the user was operating from.
+            The next improvement would be to add unit testing to the components in order to
+            more easily track down bugs and make sure the widget calculations are correct.
+            After I had people test my app, I ran into a lot of unexpected behavior, usually stemming
+            from the date range of the trip and the current date from which the user was operating from. This helped
+            me to set boundaries for the my calculations depending on the current date in relation to the 
+            trip's date range.
           </p>
         </div>
       </section>
