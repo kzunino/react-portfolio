@@ -258,6 +258,10 @@ p {
   color: #4bb0f8;
 }
 
+.travelmor-computer {
+  width: 700px;
+}
+
 /* Locals Styles */
 .locals-heading {
   color: rgb(191, 36, 152);
@@ -318,6 +322,9 @@ p {
   .project-img-featured {
     width: 100%;
     height: 300px;
+  }
+  .travelmor-computer {
+    width: 100%;
   }
 }
 

@@ -9,7 +9,7 @@ import herokuLogo from './img/heroku-icon.png';
 import pythonLogo from './img/python-logo.png';
 import materialUILogo from './img/materialui.svg';
 import postgresLogo from './img/postgres-logo.png';
-import iphoneLocals from './img/iphone-locals.png';
+import travelmorHistoryDesktop from './img/travelmorComputer.png';
  
 const Travelmor = () => {
   //triggers the elements to fade in when the window loads
@@ -26,8 +26,8 @@ const Travelmor = () => {
         <p className='col-md-9 p-0 text-secondary'>
           Travelmor is a light weight budget web application with over 200 foreign currencies to choose from.
           Traveling for extended periods of time inspired me to make a budget application 
-          that would allow me to track my spending and let me quickly forecast my future
-          spending. The front and backend end are hosted separately on heroku, so it may 
+          that would allow me to track my spending and help me keep a birds eye view of my budget.
+          The front and backend end are hosted separately on heroku, so it may 
           take about 10 to 15 seconds to wake the app from inactivity.
         </p>
       </main>
@@ -116,17 +116,17 @@ const Travelmor = () => {
             Travelmor budgeting app is written in React and Material UI. I chose 
             Material UI because I liked the idea of having a HOC theme provider and
             having the option to style each component without having to maintain 
-            a bunch of css files. 
+            a bunch of css files.
             <br></br> <br></br>The backend is written in Django with Django Rest Framework.
             I wanted to try and branch out from Node.js and practice my Python skills. Django
             also comes with some great features right out of the box such as their admin dashboard feature.
-            Django Rest Framework makes setting up token authentication easy and customizable.
-            It also integrates very well with PostgreSQL.
+            Django Rest Framework makes setting up token authentication easy and customizable,
+            while also integrating well with PostgreSQL.
             <br></br> <br></br>
-            The front is built with React using Redux for global state handling. This was
-            my first time using Redux and it made handling application state very easy.
-            I hosted the client and api on Heroku because their CLI is user friendly and 
-            they have a generous free tier PostgreSQL addon.
+            The front end is built with React using Redux for global state handling. This was
+            my first time using Redux and I really enjoyed the ease of updating state with JavaScript
+            Switch Statements. I hosted the client and api on Heroku because their CLI is user 
+            friendly and they have a generous free tier PostgreSQL addon.
           </p>
 
           <div className='col-md-5 pl-0 text-center'>
@@ -195,25 +195,30 @@ const Travelmor = () => {
             As with any project, I ran into bumps along the way. One of my biggest
             troubles was organizing and structuring the code. I found myself designing,
             building, and then refactoring a lot to make the project more maintainable. I tried to 
-            keep the codebase as reusable as possible; however, there is still room for improvement.
+            keep the codebase as reusable as possible. One of the difficulties I had was handling
+            dates and timezones. I used Moment.js to handle date parsing and calculations. It took me a few days and
+            lot of research to figure out how dates should be stored in order to account for differences 
+            in timezones. I settled on storing all dates in UTC when stored in the database and then I used Moment to parse
+            the dates on the client side into the local timezone.
     
             <br></br>
             <br></br>
             There's a few improvements I would like to develop for this project in the future.
-            The first one is, I think if the project is over a month long, I should change the
+            If the project is over a month long, I should change the
             trip history graphs to toggle between months of the trip instead of display each
-            and every day of the trip. The design kinda breaks when the trip becomes too long.
+            and every day of the trip on one continuous graph. The design breaks when the trip becomes too long.
             The next improvement I would make would be to add unit testing to the components,
             so I can more easily track down bugs and make sure the calculations output the correct
-            values. 
+            values. After I had people test my app, I ran into a lot of unexpected behavior, usually stemming
+            from the date range of the trip and the current date from which the user was operating from.
           </p>
         </div>
       </section>
       <div className='text-center'>
         <img
-          src={iphoneLocals}
-          alt='locals profile on iphone'
-          className='locals-iphone'
+          src={travelmorHistoryDesktop}
+          alt='travelmor spending history on desktop'
+          className='travelmor-computer'
         />
       </div>
 
