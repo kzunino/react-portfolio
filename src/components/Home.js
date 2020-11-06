@@ -5,6 +5,7 @@ import headerPhoto from './img/portfolio_picture.jpeg';
 import weatherForecast from './img/forecastMain.png';
 import localsPhoto from './img/locals.png';
 import traveBudget from './img/travelBudget.png';
+import travelmorBudget from './img/travelmorMain.png'
 import ucBerkeleySeal from './img/UC_Berkeley_Seal.png';
 import treehouseSeal from './img/treehouse-seal.png';
 
@@ -165,6 +166,22 @@ const Home = () => {
         className={`container-fluid mt-5 px-0 fade-element ${fadeElement}`}
       >
         <h2 className='mb-3'>Projects</h2>
+
+         <div className='col-12 mt-5 mb-5 p-0 text-center'>
+           <Link to='/travelmor'>
+            <img className='project-img-featured' src={travelmorBudget} alt='' />
+            </Link>
+            <h3 className='font-weight-bold text-center mt-3'>Travelmor Budget App</h3>
+            <p className='project-description text-center pl-0 pr-0 text-secondary'>
+              An app to help you budget smart, save more, and travel longer.
+            </p>
+            <Link className='link-decoration' to='/travelmor'>
+              View Project »
+            </Link>
+
+          </div>
+ 
+
         <div className='row justify-content-around'>
           <div className='col-md-6'>
             <Link to='/locals'>
@@ -179,6 +196,8 @@ const Home = () => {
               View Project »
             </Link>
           </div>
+
+
           <div className='col-md-6'>
             <Link to='/forecast'>
               <img className='project-img' src={weatherForecast} alt='' />
@@ -193,7 +212,7 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className='col-12 mt-5 text-center'>
+          {/* <div className='col-12 mt-5 text-center'>
             <img className='project-img-lrg' src={traveBudget} alt='' />
             <h3 className='font-weight-bold text-center mt-3'>Travel Budget</h3>
             <p className='project-description text-center pl-0 pr-0 text-secondary'>
@@ -202,7 +221,7 @@ const Home = () => {
             <p className='project-description text-center pl-0 pr-0 text-secondary'>
               <strong>Coming soon...</strong>
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
