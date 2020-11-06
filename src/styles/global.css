@@ -161,6 +161,7 @@ p {
 .project-img-featured {
   width: 85%;
   transition: transform 0.5s;
+
   object-fit: cover;
 }
 
@@ -247,6 +248,15 @@ p {
 .program-icon-img {
   width: 55px;
 }
+.python-program-icon-img {
+  width: 75px;
+}
+
+/* Travelmor Styles */
+
+.travelmor-heading {
+  color: #4bb0f8;
+}
 
 /* Locals Styles */
 .locals-heading {
@@ -268,6 +278,14 @@ p {
 .postgres {
   color: rgb(57, 97, 143);
   font-size: 34px;
+}
+
+.materialUI {
+  color: rgb(70, 151, 236);
+}
+
+.django {
+  color: rgb(19, 44, 32);
 }
 
 .node {
@@ -309,7 +327,7 @@ p {
     height: 50%;
   }
   .project-img-featured {
-    height: 500px;
+    height: 470px;
   }
 }
 

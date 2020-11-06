@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import weatherForecast from './img/forecastMain.png';
-import travelBudget from './img/travelBudget.png';
+import travelmorMain from './img/travelmorDashboard2.png'
+import locals from './img/locals.png';
 
-import localsLrg from './img/locals-lrg.png';
 import reactLogo from './img/react-icon.png';
 import herokuLogo from './img/heroku-icon.png';
-import nodeLogo from './img/node-logo.png';
-import javascriptLogo from './img/javascript-logo.png';
+import pythonLogo from './img/python-logo.png';
+import materialUILogo from './img/materialui.svg';
 import postgresLogo from './img/postgres-logo.png';
 import iphoneLocals from './img/iphone-locals.png';
-
+ 
 const Travelmor = () => {
   //triggers the elements to fade in when the window loads
   const [fadeElement, setFadeElements] = useState('fade-element');
@@ -22,13 +22,13 @@ const Travelmor = () => {
   return (
     <div className={`container-fluid p-0 fade-element ${fadeElement}`}>
       <main className='container-fluid mt-5 px-0'>
-        <h1 className='font-weight-bold mt-5'>Locals</h1>
+        <h1 className='font-weight-bold mt-5'>Travelmor.</h1>
         <p className='col-md-9 p-0 text-secondary'>
-          Locals is a web application idea I had while backpacking and living in
-          South America. The goal is to connect travelers to authentic local
-          experiences outside the purview of mass tourism and help locals create
-          their own micro-businesses in order to showcase their unique corner of
-          the world.
+          Travelmor is a light weight budget web application with over 200 foreign currencies to choose from.
+          Traveling for extended periods of time inspired me to make a budget application 
+          that would allow me to track my spending and let me quickly forecast my future
+          spending. The front and backend end are hosted separately on heroku, so it may 
+          take about 10 to 15 seconds to wake the app from inactivity.
         </p>
       </main>
       <section className={`container-fluid mt-5 px-0`}>
@@ -53,18 +53,18 @@ const Travelmor = () => {
             <tr>
               <td className='font-weight-light'>Personal</td>
               <td className='font-weight-light'>React</td>
-              <td className='secondary-color font-weight-bold locals-heading'>
+              <td className='secondary-color font-weight-bold travelmor-heading'>
                 <a
-                  href='https://github.com/kzunino/locals'
+                  href='https://github.com/kzunino/travelmor_client'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Repository
+                  Client Repository
                 </a>
               </td>
-              <td className='secondary-color font-weight-bold locals-heading'>
+              <td className='secondary-color font-weight-bold travelmor-heading'>
                 <a
-                  href='https://locals-deploy.herokuapp.com/home'
+                  href='https://travelmor-client.herokuapp.com'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -74,13 +74,21 @@ const Travelmor = () => {
             </tr>
             <tr>
               <td></td>
-              <td className='font-weight-light'>Node.js</td>
-              <td></td>
+              <td className='font-weight-light'>Django</td>
+              <td className='secondary-color font-weight-bold travelmor-heading'>
+                <a
+                  href='https://github.com/kzunino/travelmor_api'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  API Repository
+                </a>
+              </td>
               <td></td>
             </tr>
             <tr>
               <td></td>
-              <td className='font-weight-light'>Express.js</td>
+              <td className='font-weight-light'>Material UI</td>
               <td></td>
               <td></td>
             </tr>
@@ -95,35 +103,30 @@ const Travelmor = () => {
       </section>
 
       <img
-        src={localsLrg}
+        src={travelmorMain}
         alt='Locals home page'
         className='project-main-photo'
+       
       />
 
       <section className='container-fluid mt-5 px-0'>
         <h2 className='mt-5'>Web Stack</h2>
         <div className='row container-fluid pr-0 mr-sm-0 align-items-center'>
           <p className='col-md-7 p-0 text-secondary mb-5'>
-            For this project I created a full stack web application using
-            PostgreSQL, Express.js, React, and Node.js––i.e. the PERN stack. I
-            chose PostgreSQL over a noSQL database for its long established
-            legacy and popularity. Instead of raw queries I opted to use
-            Sequelize ORM for its excellent documentation and readable syntax.
-            <br></br> <br></br>I built the backend using Node.js with Express to
-            handle routing and http requests. For authentication I'm using
-            Express-Validator, Bcrypt, and JSON Web Tokens. I had originally
-            thought about using Passport.js; however, I didn't think I would
-            need the extensive features and opted for a lighter weight solution.
-            For a photo database I am using Cloudinary because they have a
-            generous free tier and wonderful documentation.
+            Travelmor budgeting app is written in React and Material UI. I chose 
+            Material UI because I liked the idea of having a HOC theme provider and
+            having the option to style each component without having to maintain 
+            a bunch of css files. 
+            <br></br> <br></br>The backend is written in Django with Django Rest Framework.
+            I wanted to try and branch out from Node.js and practice my Python skills. Django
+            also comes with some great features right out of the box such as their admin dashboard feature.
+            Django Rest Framework makes setting up token authentication easy and customizable.
+            It also integrates very well with PostgreSQL.
             <br></br> <br></br>
-            The front is built with React and ReactStrap. My goal was to
-            practice using React Hooks for state management instead of using
-            class syntax because the React ecosystem seems to be evolving in
-            that direction. To handle global state and making http requests I
-            opted to use React Context with Axios. I chose Heroku to host the
-            application because it is easy to use and the Postgres addon works
-            great!
+            The front is built with React using Redux for global state handling. This was
+            my first time using Redux and it made handling application state very easy.
+            I hosted the client and api on Heroku because their CLI is user friendly and 
+            they have a generous free tier PostgreSQL addon.
           </p>
 
           <div className='col-md-5 pl-0 text-center'>
@@ -138,13 +141,13 @@ const Travelmor = () => {
             <br></br>
             <br></br>
             <br></br>
-            <div className='program-icon d-inline node'>
+            <div className='program-icon d-inline django'>
               <img
-                src={nodeLogo}
+                src={pythonLogo}
                 alt='Node Logo'
-                className='program-icon-img node'
-              />{' '}
-              Node
+                className='python-program-icon-img'
+              />
+              Django
             </div>
             <br></br>
             <br></br>
@@ -161,13 +164,13 @@ const Travelmor = () => {
             <br></br>
             <br></br>
             <br></br>
-            <div className='program-icon d-inline javascript'>
+            <div className='program-icon d-inline materialUI'>
               <img
-                src={javascriptLogo}
-                alt='Heroku Logo'
-                className='program-icon-img javascript'
+                src={materialUILogo}
+                alt='Material UI Logo'
+                className='program-icon-img '
               />{' '}
-              Express
+              Material UI
             </div>
 
             <br></br>
@@ -189,36 +192,20 @@ const Travelmor = () => {
         <h2 className='mt-5 text-center'>Afterthoughts &amp; Improvements</h2>
         <div className='row justify-content-center'>
           <p className='col-md-9 text-center text-secondary'>
-            This was the first full stack project that I created from scratch,
-            so my biggest challenge was figuring out what my idea really was and
-            which features to include. For example, I wanted a message board
-            where users could interact. I envisioned a place where local
-            residents and businesses would promote events like a virtual
-            bulletin board, while also driving traffic to the site. The message
-            board needs further development to allow users to search more
-            localized message boards for the areas they wish to explore.
+            As with any project, I ran into bumps along the way. One of my biggest
+            troubles was organizing and structuring the code. I found myself designing,
+            building, and then refactoring a lot to make the project more maintainable. I tried to 
+            keep the codebase as reusable as possible; however, there is still room for improvement.
+    
             <br></br>
             <br></br>
-            Because this was a personal project, I didn't create a way for a
-            user to book a tour. To launch as a business, I would need to build
-            a booking feature and add a calendar to the dashboard. The search
-            feature is a little underdeveloped as well. If you search a first
-            name, last name, or hit a key word in the title, the query will
-            return a result but the longer the search query, the less likely it
-            will return a match because it will be looking for exact matches.
-            And the last big fix would be setting up a stricter verification
-            process to ensure the identity of hosts. For the purpose of this app
-            I just made a verification switch at the bottom of the profile.
-            <br></br>
-            <br></br>
-            Overall, this project taught me a lot and gave me an opportunity to
-            learn and practice many new technologies. There are countless
-            features that could be added to a project like this and there is a
-            lot of room for improvement. If I were to further pursue this
-            project, my main priority would be strengthening the safety
-            standards by verifying and vetting hosts. I’d want to ensure the
-            experiences and hosts were high-quality to guarantee the safety of
-            the users and capture repeat users.
+            There's a few improvements I would like to develop for this project in the future.
+            The first one is, I think if the project is over a month long, I should change the
+            trip history graphs to toggle between months of the trip instead of display each
+            and every day of the trip. The design kinda breaks when the trip becomes too long.
+            The next improvement I would make would be to add unit testing to the components,
+            so I can more easily track down bugs and make sure the calculations output the correct
+            values. 
           </p>
         </div>
       </section>
@@ -234,7 +221,7 @@ const Travelmor = () => {
         <div className='col-12 col-md-2 text-center'>
           <a
             className='link-decoration '
-            href='https://github.com/kzunino/locals'
+            href='https://github.com/kzunino/travelmor_client'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -244,7 +231,7 @@ const Travelmor = () => {
         <div className='col-12 col-md-2 text-center'>
           <a
             className='link-decoration'
-            href='https://locals-deploy.herokuapp.com/home'
+            href='https://travelmor-client.herokuapp.com'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -257,6 +244,21 @@ const Travelmor = () => {
       <section className={`container-fluid mt-5 px-0`}>
         <h2 className='font-weight-bold'>Explore other projects</h2>
         <div className='row justify-content-around'>
+
+        <div className='col-md-6 mt-5'>
+            <Link to='/locals'>
+              <img className='project-img' src={locals} alt='' />
+            </Link>
+            <h3 className='font-weight-bold mt-3'>Locals</h3>
+            <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
+              A full stack application that connects travelers to locals
+              crafting authentic experiences in cities they love.
+            </p>
+            <Link className='link-decoration' to='/locals'>
+              View Project »
+            </Link>
+          </div>
+
           <div className='col-md-6 mt-5'>
             <Link to='/forecast'>
               <img className='project-img' src={weatherForecast} alt='' />
@@ -271,17 +273,6 @@ const Travelmor = () => {
             </Link>
           </div>
 
-          <div className='col-md-6 mt-5'>
-            <img className='project-img' src={travelBudget} alt='' />
-
-            <h3 className='font-weight-bold mt-3'>Travel Budget</h3>
-            <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
-              An app to help you budget smart, save more, and travel longer.
-            </p>
-            <p className='project-description text-center pl-0 pr-0 text-secondary'>
-              <strong>Coming soon...</strong>
-            </p>
-          </div>
         </div>
       </section>
     </div>

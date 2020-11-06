@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 import headerPhoto from './img/portfolio_picture.jpeg';
 import weatherForecast from './img/forecastMain.png';
 import localsPhoto from './img/locals.png';
-import traveBudget from './img/travelBudget.png';
 import travelmorBudget from './img/travelmorMain.png'
 import ucBerkeleySeal from './img/UC_Berkeley_Seal.png';
 import treehouseSeal from './img/treehouse-seal.png';
@@ -173,12 +172,11 @@ const Home = () => {
             </Link>
             <h3 className='font-weight-bold text-center mt-3'>Travelmor Budget App</h3>
             <p className='project-description text-center pl-0 pr-0 text-secondary'>
-              An app to help you budget smart, save more, and travel longer.
+              An app to help you budget smart, save money, and travel more.
             </p>
             <Link className='link-decoration' to='/travelmor'>
               View Project »
             </Link>
-
           </div>
  
 

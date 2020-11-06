@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import weatherForecast from './img/forecastMain.png';
-import travelBudget from './img/travelBudget.png';
+import travelmorBudget from './img/travelmorMain.png'
+
 
 import localsLrg from './img/locals-lrg.png';
 import reactLogo from './img/react-icon.png';
@@ -272,16 +273,18 @@ const Locals = () => {
           </div>
 
           <div className='col-md-6 mt-5'>
-            <img className='project-img' src={travelBudget} alt='' />
-
-            <h3 className='font-weight-bold mt-3'>Travel Budget</h3>
+            <Link to='/travelmor'>
+              <img className='project-img' src={travelmorBudget} alt='' />
+            </Link>
+            <h3 className='font-weight-bold mt-3'>Travelmor</h3>
             <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
-              An app to help you budget smart, save more, and travel longer.
+            An app to help you budget smart, save money, and travel more.
             </p>
-            <p className='project-description text-center pl-0 pr-0 text-secondary'>
-              <strong>Coming soon...</strong>
-            </p>
+            <Link className='link-decoration' to='/travelmor'>
+              View Project »
+            </Link>
           </div>
+
         </div>
       </section>
     </div>
