@@ -7,7 +7,6 @@ import {Route, Switch, Redirect} from 'react-router-dom';
 //Import Components
 import Header from './components/Header';
 import Home from './components/Home';
-// import Project from './components/Project';
 import Travelmor from './components/Travelmor'
 import Locals from './components/Locals';
 import Forecast from './components/Forecast';
