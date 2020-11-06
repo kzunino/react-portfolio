@@ -59,7 +59,7 @@ const Travelmor = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Client Repository
+                  Client Repo
                 </a>
               </td>
               <td className='secondary-color font-weight-bold travelmor-heading'>
@@ -81,7 +81,7 @@ const Travelmor = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  API Repository
+                  API Repo
                 </a>
               </td>
               <td></td>

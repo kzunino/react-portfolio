@@ -258,6 +258,20 @@ const Locals = () => {
       <section className={`container-fluid mt-5 px-0`}>
         <h2 className='font-weight-bold'>Explore other projects</h2>
         <div className='row justify-content-around'>
+
+        <div className='col-md-6 mt-5'>
+            <Link to='/travelmor'>
+              <img className='project-img' src={travelmorBudget} alt='' />
+            </Link>
+            <h3 className='font-weight-bold mt-3'>Travelmor</h3>
+            <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
+            An app to help you budget smart, save money, and travel more.
+            </p>
+            <Link className='link-decoration' to='/travelmor'>
+              View Project »
+            </Link>
+          </div>
+
           <div className='col-md-6 mt-5'>
             <Link to='/forecast'>
               <img className='project-img' src={weatherForecast} alt='' />
@@ -272,18 +286,7 @@ const Locals = () => {
             </Link>
           </div>
 
-          <div className='col-md-6 mt-5'>
-            <Link to='/travelmor'>
-              <img className='project-img' src={travelmorBudget} alt='' />
-            </Link>
-            <h3 className='font-weight-bold mt-3'>Travelmor</h3>
-            <p className='project-description col-md-9 pl-0 pr-0 text-secondary'>
-            An app to help you budget smart, save money, and travel more.
-            </p>
-            <Link className='link-decoration' to='/travelmor'>
-              View Project »
-            </Link>
-          </div>
+         
 
         </div>
       </section>

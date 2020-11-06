@@ -144,12 +144,12 @@ const Home = () => {
 
           <div className='col-12 col-sm-6 col-md-4 '>
             <h6 className='font-weight-bold m-0'>Frontend Frameworks:</h6>
-            <p className='technologies small'>React / jQuery / Bootstrap 4</p>
+            <p className='technologies small'>React / Material UI / Bootstrap / jQuery </p>
           </div>
 
           <div className='col-12 col-sm-6 col-md-4 '>
             <h6 className='font-weight-bold m-0'>Backend Frameworks:</h6>
-            <p className='technologies small'> Node.js / Express </p>
+            <p className='technologies small'> Node.js / Express / Django </p>
           </div>
 
           <div className='col-12 col-sm-6 col-md-4 '>
